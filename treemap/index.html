@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treemap</title>
+  <style>
+    body { max-width: 900px; margin: 0 auto; padding: 24px 16px;
+           font-family: sans-serif; color: #333; line-height: 1.5; }
+    img { max-width: 100%; }
+    .pie { font-size: .85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Población de nacionalidad extranjera en Cataluña por comarca.</h1>
+  <img src="treemap.png" alt="Treemap de la población extranjera por comarca">
+  <p class="pie">Fuente: Idescat, a partir del Censo de población anual del INE, 1 de enero de 2025.</p>
+
+  <h2>La técnica</h2>
+  <p>La técnica treemap fue una idea de Ben Shneiderman en 1990 en la Universidad de Maryland, quería abordar el desafío de identificar y representar grandes conjuntos de datos jerárquicos, los gráficos treemap los muestran como un conjunto de rectángulos anidados. A cada categoría se le asigna un rectángulo que estará cubierto por rectángulos más pequeños asignados a subcategorías. Cada rectángulo tiene un área proporcional a una variable específica, a parte, aplicamos distintos colores a los diferentes rectángulos para representar otras dimensiones, por ejemplo, el grupo al que pertenecen. Se aplican, por ejemplo, en análisis empresarial para comparar cifras de ventas de diferentes modelos de productos. También para ejemplificar temas sociales como, por ejemplo, los tipos de comida consumidos en una parte de la población o las marcas de coche favoritas.</p>
+
+  <h2>Datos adecuados y posibles limitaciones</h2>
+  <p>Mediante esta técnica podemos representar una variable categórica sola o con una variable numérica asociada a cada categoría, dos o más variables categóricas anidadas solas o con una variable numérica que al igual que en el caso anterior tenga una sola observación para cada hoja. Vemos que una de las limitaciones es que solo podemos expresar una variable numérica en cada treemap y todas las observaciones numéricas deben ser positivas. En caso de tener más de dos niveles de jerarquía debemos crearlo interactivo para mejorar su lectura.</p>
+
+  <h2>Ventajas e inconvenientes</h2>
+  <p>Ventajas: se pueden representar grandes cantidades de datos aprovechando de manera eficiente el espacio.
+Inconvenientes: cuesta mucho más comparar áreas que longitudes y en los rectángulos de menor tamaño las etiquetas son ilegibles.</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OHLC Charts</title>
+  <style>
+    body { max-width: 900px; margin: 0 auto; padding: 24px 16px;
+           font-family: sans-serif; color: #333; line-height: 1.5; }
+    img { max-width: 100%; }
+    .pie { font-size: .85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Precio de las acciones de Amazon (AMZN) de febrero a junio de 2020.</h1>
+  <iframe src="grafico.html" width="100%" height="600" style="border:0"></iframe>
+  <p class="pie">Cotización diaria de las acciones(en dólares) de Amazon de febrero a junio de 2020. Fuente: dataset S&P 500 Stocks de andrewmvd en Kaggle. </p>
+
+  <h2>La técnica</h2>
+  <p>Los gráficos de apertura, máximo, mínimo y cierre (OHLC Charts) son una herramienta para visualizar y analizar los cambios de precio a lo largo del tiempo en valores, divisas, acciones, etc. Surgió a principios del siglo XX en occidente y se utiliza en el ámbito de las finanzas, por ejemplo, en el estudio de precios de productos básicos como el gas natural o el petróleo. Normalmente, tenemos el eje X que representa la escala de tiempo y el eje y que representa la escala de precios. En cada periodo de tiempo, los precios mínimo y máximo negociados están representados por la longitud del símbolo, y por una marca horizontal en el símbolo están representados el precio de apertura (marca a la izquierda) y el de cierre (marca a la derecha). Podemos utilizar colores para diferenciar entre símbolos, dependiendo de si el mercado es alcista (cierre mayor que apertura) o bajista (apertura mayor que cierre).</p>
+  <h2>Datos adecuados y posibles limitaciones</h2>
+  <p>Para cada periodo se necesita una fecha y cuatro valores numéricos: apertura, máximo, mínimo y cierre. Estos datos deben ser coherentes, el mínimo deberá ser inferior al máximo. La limitación más destacada es la ilegibilidad cuando representamos cientos de barras. </p>
+  <h2>Ventajas e inconvenientes</h2>
+  <p>Ventajas: resume cuatro datos en un símbolo, y permite identificar a simple vista las tendencias.
+Inconvenientes: no muestra como se mueve el precio dentro del periodo y no predice el futuro, describe el pasado.</p>
+</body>
+</html>
